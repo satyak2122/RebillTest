@@ -20,7 +20,7 @@ public class WebScreenShot
 		System.setProperty("webdriver.gecko.driver", "G:\\Rebill_Selenium_jar\\FirefoxDriver\\geckodriver.exe");
 	 WebDriver driver=new FirefoxDriver();
 	 
-	// Maximize the window
+	// Maximize the window in Browser
 	driver.manage().window().maximize();
 	 
 	// Pass the url
