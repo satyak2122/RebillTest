@@ -17,7 +17,7 @@ public class WebScreenShot
 	 public void TestJavaS1() throws Throwable
 	{
 	// Open Firefox
-		System.setProperty("webdriver.gecko.driver", "G:\\Rebill_Selenium_jar\\FirefoxDriver\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "G:\\AppiumPGM\\workspace\\GraphProject\\Drivers\\FirefoxDriver\\geckodriver.exe");
 	 WebDriver driver=new FirefoxDriver();
 	 
 	// Maximize the window in Browser Window
