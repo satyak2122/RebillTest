@@ -27,7 +27,7 @@ public class WebScreenShot
 	driver.get("http://www.google.com");
 	 
 	// Take screenshot and store as a file format
-	File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	/*File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	try {
 	 // now copy the  screenshot to desired location using copyFile //method
 	FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"\\Screenshot\\"+System.currentTimeMillis()+".png"));
@@ -41,7 +41,14 @@ public class WebScreenShot
 	 {
 	  System.out.println(e.getMessage());
 	 
-	 }
+	 }*/
+	
+	Thread.sleep(5000);
+	driver.close();
+	
+	System.out.println("Application done");
 	}
+	
+ 
 
 }
