@@ -7,6 +7,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
@@ -17,8 +18,10 @@ public class WebScreenShot
 	 public void TestJavaS1() throws Throwable
 	{
 	// Open Firefox
-		System.setProperty("webdriver.gecko.driver", "G:\\AppiumPGM\\workspace\\GraphProject\\Drivers\\FirefoxDriver\\geckodriver.exe");
-	 WebDriver driver=new FirefoxDriver();
+		System.out.println(System.getProperty("user.dir"));
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Drivers\\ChromeDriver\\chromedriver.exe");
+	// WebDriver driver=new FirefoxDriver();
+		 WebDriver driver=new ChromeDriver();
 	 
 	// Maximize the window in Browser Window
 	driver.manage().window().maximize();
